@@ -146,9 +146,9 @@ describe('10 - Implemente os casos de teste e a função `createMenu`', () => {
     // objetoRetornado.order('coxinha');
     // objetoRetornado.pay() // Retorno: somaDosPreçosDosPedidos
     // ```
-    expect(objetoRetornado.pay()).toEqual(11.7);
+    expect(objetoRetornado.pay()).toBeCloseTo(12.87);
     objetoRetornado.order('cerveja');
-    expect(objetoRetornado.pay()).toEqual(18.6);
+    expect(objetoRetornado.pay()).toBeCloseTo(20.46);
     // Agora faça o PASSO 4 no arquivo `src/restaurant.js`.
   });
 });
